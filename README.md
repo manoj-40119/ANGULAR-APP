@@ -1,2 +1,2 @@
-# AngularProject
+# ANGULAR-APP
 First Angular Project
