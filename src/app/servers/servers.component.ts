@@ -9,12 +9,14 @@ export class ServersComponent {
   serverCreationStatus = 'No server is created!';
   serverName ='';
   userName = '';
+  userIfCreated = false;
   constructor() {
     setTimeout(() => {
       this.allowNewServer = true;
     },2000)
    }
   onClickButton(){
+    this.userIfCreated = true;
   this.serverCreationStatus="Server is Created" + "  "+ this.serverName;
   }
   onClick(){
