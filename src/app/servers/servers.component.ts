@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 export class ServersComponent {
   allowNewServer = false;
   serverCreationStatus = 'No server is created!';
-  serverName ='';
+  serverName ='TestServer';
   userName = '';
+  servers = ['TestServer','TestServer2']
   userIfCreated = false;
   constructor() {
     setTimeout(() => {
@@ -17,6 +18,7 @@ export class ServersComponent {
    }
   onClickButton(){
     this.userIfCreated = true;
+    this.servers.push(this.serverName);
   this.serverCreationStatus="Server is Created" + "  "+ this.serverName;
   }
   onClick(){

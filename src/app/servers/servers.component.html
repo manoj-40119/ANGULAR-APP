@@ -11,5 +11,5 @@
 <button class="btn btn-primary" [disabled]="userName===''" (click)="userName=''">userName</button>
 
 
-<server-app></server-app>
-<server-app></server-app>
+<server-app *ngFor="let server of servers"></server-app>
+

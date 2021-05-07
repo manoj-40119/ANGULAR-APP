@@ -1,3 +1,4 @@
-<h5>Server with ID {{serverId}} with status {{getserverStatus()}} </h5>
+<h5 [ngStyle]="{backgroundColor: onColor()}"  [ngClass]="{onLine: serverStatus === 'online'}">
+    Server with ID {{serverId}} with status {{getserverStatus()}} </h5>
 
 
